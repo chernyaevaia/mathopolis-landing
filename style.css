@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1420px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__dropdown {
+  border: none;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 60px;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  font-family: Work Sans;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2a2a2a;
+  margin-right: 60px;
+}
+
+.menu__donate {
+  background: #f9523b;
+  border-radius: 5px;
+  padding: 15px 40px;
+  color: white;
+}
+
+.roles {
+  max-width: 1420px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roles__card {
+  width: 330px;
+  padding: 36px;
+  border: 1px solid #777777;
+  border-radius: 20px;
+}
+.roles__card:hover {
+  background-color: #6a19f5;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  font-family: Work Sans;
+  font-size: 32px;
+}
+
+.description {
+  font-family: "Work Sans";
+  font-size: 20px;
+}
+
+.heading {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 52px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.subheading {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features {
+  background-color: #2580c1;
+}
+
+.features__card {
+  width: 460px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__icon1 {
+  width: 174px;
+  height: 174px;
+  background-image: url(./img/home-encouraging-play.png);
+}
+
+.features__icon2 {
+  width: 178px;
+  height: 178px;
+  background-image: url(./img/home-building-confidence.png);
+}
+
+.features__icon3 {
+  width: 236px;
+  height: 236px;
+  background-image: url(./img/home-including-everyone.png);
+}
+
+.features__title {
+  margin-bottom: 30px;
+}
+
+.globalcontainer {
+  max-width: 1440px;
+}
+
+.news__card {
+  display: flex;
+  align-items: center;
+  width: 788px;
+  padding: 36px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.news__pic {
+  margin-right: 40px;
+  width: 300px;
+}
+
+.news__headline {
+  margin: 16px 0;
+}
+
+.news__learnMore {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.news__learnMore:hover {
+  cursor: pointer;
+}
+
+.news__linkAllNews {
+  background: #f6c55a;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 20px 36px;
+}
+
+.news__date {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.news__description {
+  margin-bottom: 26px;
+}
+
+.subscribe__input {
+  width: 460px;
+  height: 60px;
+  border: 1px solid #2a2a2a;
+  border-radius: 5px;
+}
+
+.testimonials__review {
+  font-family: "Work Sans";
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 24px;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.btn1 {
+  padding: 20px 54px;
+  border: none;
+  background: #6a19f5;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 22px;
+}
+
+.categories {
+  background-color: #5fc8d7;
+}
+
+.categories__card {
+  display: flex;
+  width: 788px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 42px 0;
+}
+
+.categories__image {
+  width: 738px;
+  height: 627px;
+}
+
+.categories__icon1 {
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-image: url(./img/triangle-icon.svg);
+}
+
+.categories__icon2 {
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-image: url(./img/octa-icon.svg);
+}
+
+.categories__icon3 {
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-image: url(./img/cross-icon.svg);
+}
+
+.categories__arrow {
+  width: 30px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-image: url(./img/arrow-right.svg);
+}
+
+.footer {
+  background-color: #fff2d6;
+}
+
+.copyright {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 0.3;
+}/*# sourceMappingURL=style.css.map */
