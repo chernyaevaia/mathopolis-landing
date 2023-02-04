@@ -1,37 +1,32 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
+ol,
 ul,
-li {
+li,
+summary {
   list-style: none;
 }
 
+body {
+  font-family: Work Sans;
+}
+
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 240px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 
 .menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .menu__dropdown {
   border: none;
-  font-family: Work Sans;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -43,7 +38,6 @@ li {
 }
 
 .menu__link {
-  font-family: Work Sans;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -59,43 +53,31 @@ li {
   color: white;
 }
 
-.logocontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.intro {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   height: 510px;
 }
 
-.mathlogo {
-  background-image: url(./img/mathforall.png);
-  background-repeat: no-repeat;
+.intro__logo {
   height: 400px;
   width: 1270px;
+  background-image: url(./img/mathforall.png);
+  background-repeat: no-repeat;
   margin-bottom: 30px;
 }
 
-.slogan {
-  font-family: 'Work Sans';
-  font-style: normal;
+.intro__slogan {
   font-weight: 500;
   font-size: 24px;
 }
 
 .roles {
-  padding: 0 240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 74px;
 }
 
@@ -106,7 +88,6 @@ li {
   border: 1px solid #777777;
   border-radius: 20px;
 }
-
 .roles__card:hover {
   background-color: #6a19f5;
   color: white;
@@ -114,25 +95,19 @@ li {
 }
 
 .title {
-  font-family: Work Sans;
   font-size: 32px;
-  max-width: 600px;
 }
 
 .categories__title {
-  font-family: Work Sans;
-  font-size: 32px;
   margin-bottom: 5px;
   width: 460px;
 }
 
 .description {
-  font-family: "Work Sans";
   font-size: 20px;
 }
 
 .subscribe__description {
-  font-family: "Work Sans";
   font-size: 20px;
   margin-bottom: 70px;
   max-width: 590px;
@@ -140,12 +115,10 @@ li {
 }
 
 .categories__description {
-  font-family: "Work Sans";
   font-size: 20px;
 }
 
 .heading {
-  font-family: "Work Sans";
   font-weight: 600;
   font-size: 52px;
   letter-spacing: 0.05em;
@@ -153,73 +126,40 @@ li {
 }
 
 .news__heading {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-size: 52px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: white;
   margin-bottom: 80px;
 }
 
 .subscribe__heading {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-size: 52px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   margin-bottom: 80px;
 }
 
 .faq__heading {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-size: 52px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   margin-bottom: 80px;
 }
 
 .testimonials__heading {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-size: 52px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   margin-bottom: 80px;
 }
 
 .categories__heading {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-size: 52px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   margin-bottom: 80px;
 }
 
 .features__heading {
-  font-family: "Work Sans";
-  font-weight: 600;
-  font-size: 52px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   margin-top: 120px;
   margin-bottom: 60px;
   color: white;
 }
 
 .features__subheading {
-  font-family: "Work Sans";
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 70px;
   color: white;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.cards__container {
   display: flex;
   margin-bottom: 120px;
 }
@@ -228,40 +168,23 @@ li {
   background-color: #2580c1;
 }
 
-.features__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.features__wrapper {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features__card {
   width: 440px;
   padding: 20px;
   background: #ffffff;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-right: 30px;
 }
 
@@ -288,27 +211,18 @@ li {
 }
 
 .news {
-  background-color: #2580C1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: #2580c1;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 120px 0;
 }
 
 .news__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 788px;
   padding: 36px;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   background-color: white;
   margin-left: 192px;
@@ -324,24 +238,20 @@ li {
 }
 
 .news__learnMore {
-  font-family: "Work Sans";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: underline;
 }
-
 .news__learnMore:hover {
   cursor: pointer;
 }
 
 .news__linkAllNews {
   background: #f6c55a;
-  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
-          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-  font-family: "Work Sans";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -350,7 +260,6 @@ li {
 }
 
 .news__date {
-  font-family: "Work Sans";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -370,7 +279,6 @@ li {
 }
 
 .testimonials__review {
-  font-family: "Work Sans";
   max-width: 980px;
   font-weight: 500;
   line-height: 150%;
@@ -385,16 +293,12 @@ li {
 }
 
 .testimonials__name {
-  font-family: 'Work Sans';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
 }
 
 .testimonials__role {
   margin-top: 5px;
-  font-family: 'Work Sans';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   opacity: 0.7;
@@ -404,11 +308,8 @@ li {
   padding: 20px 54px;
   border: none;
   background: #6a19f5;
-  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
-          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-  font-family: "Work Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
@@ -420,19 +321,18 @@ li {
 
 .categories {
   background-color: #5fc8d7;
-  padding: 80px 240px;
+  padding: 80px 0px;
+}
+
+.categories__wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .categories__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 788px;
   border-radius: 20px;
   background-color: white;
@@ -444,13 +344,6 @@ li {
   width: 638px;
   height: 527px;
   margin-left: 50px;
-  padding-bottom: 130px;
-}
-
-.categories__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .categories__icon1 {
@@ -487,31 +380,17 @@ li {
 
 .testimonials {
   padding: 100px 0;
-  background-color: #FF6D8D;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: #ff6d8d;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .faq {
   padding-top: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .faq__number {
@@ -544,7 +423,7 @@ li {
   background-image: url(./img/06.svg);
 }
 
-details > summary {
+details {
   cursor: pointer;
   list-style: none;
 }
@@ -557,28 +436,20 @@ details > summary {
 }
 
 .faq__list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 80px;
 }
 
-.faq__question {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.faq__card {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 705px;
   padding: 20px;
   margin-right: 30px;
   margin-bottom: 20px;
-  border: 2px solid #DAC9A6;
+  border: 2px solid #dac9a6;
   border-radius: 20px;
 }
 
@@ -588,12 +459,8 @@ details[open] {
 
 .subscribe {
   margin-top: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
   padding: 50px 0;
 }
 
@@ -611,26 +478,15 @@ details[open] {
 }
 
 .subscribe__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {
   background-color: #fff2d6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 50px 0;
 }
 
@@ -653,36 +509,23 @@ details[open] {
 
 .footer__follow {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 266px;
 }
 
 .footer__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   width: 300px;
 }
 
 .footer__font {
-  font-family: 'Work Sans';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
 }
 
 .footer__list > li {
-  font-family: 'Work Sans';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
@@ -690,7 +533,6 @@ details[open] {
 }
 
 .copyright {
-  font-family: "Work Sans";
   font-weight: 500;
   font-size: 20px;
   opacity: 0.3;
@@ -722,5 +564,4 @@ details[open] {
 
 .youtube {
   background-image: url(./img/youtube-ico.svg);
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
