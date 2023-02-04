@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="globalcontainer">
+
     <header class="header">
       <img src="./img/logo.png" alt="" />
       <nav class="menu">
@@ -46,7 +46,11 @@
     </header>
 
     <main>
-      <p>We are a nonprofit on a mission to create magical math moments</p>
+      <div class="logocontainer">
+      <div class="mathlogo"></div>
+      <p class="slogan">We are a nonprofit on a mission to create magical math moments</p>
+    </div>
+      
 
       <section class="roles">
         <div class="roles__card">
@@ -68,9 +72,10 @@
       </section>
 
       <section class="features">
-        <h2 class="heading">Why Mathopolis Works</h2>
-        <p class="subheading">
-          Mathopolis hosts fun classroom and community math events, creates math
+        <div class="features__container">
+        <h2 class="features__heading">Why Mathopolis Works</h2>
+        <p class="features__subheading">
+          Mathopolis hosts fun classroom and community math events, creates <br> math
           puzzles, and trains educators how to inspire kids with joyful math.
         </p>
         <div class="container">
@@ -111,24 +116,21 @@
             </p>
           </div>
         </div>
-      </section>
-
-      <section>
-        <h2 class="heading">The Biggest Math Party Around</h2>
-        <a>See Events</a>
+      </div>
       </section>
 
       <section class="categories">
-        <h2 class="heading">
+        <h2 class="categories__heading">
           Discover Magical <br />
           Maths Moments
         </h2>
-        <div>
+        <div class="categories__wrapper">
+          <div>
           <div class="categories__card">
             <div class="categories__icon1"></div>
             <div>
-              <p class="title">Events</p>
-              <p class="description">
+              <p class="categories__title">Events</p>
+              <p class="categories__description">
                 From the classroom to a community festival.
               </p>
             </div>
@@ -137,8 +139,8 @@
           <div class="categories__card">
             <div class="categories__icon2"></div>
             <div>
-              <p class="title">Puzzles</p>
-              <p class="description">
+              <p class="categories__title">Puzzles</p>
+              <p class="categories__description">
                 Math puzzles for all ages and skill levels.
               </p>
             </div>
@@ -147,70 +149,94 @@
           <div class="categories__card">
             <div class="categories__icon3"></div>
             <div>
-              <p class="title">Workshops</p>
-              <p class="description">Learn how to spread joyful math.</p>
+              <p class="categories__title">Workshops</p>
+              <p class="categories__description">Learn how to spread joyful math.</p>
             </div>
             <div class="categories__arrow"></div>
           </div>
         </div>
-        <img class="categories__image" src="./img/discover-img.png" alt="" />
+          <img class="categories__image" src="./img/discover-img.png" alt="" />
+        </div>
       </section>
 
       <section class="testimonials">
-        <h2 class="heading">Testimonials</h2>
-        <div>
+        <h2 class="testimonials__heading">Testimonials</h2>
           <p class="testimonials__review">
             When I asked my 8 year old if he wanted to go to a math festival, I
             got a rather tepid, "Um... maybe? How long is it?" When I told him 1
             hour and 45 minutes, he was like, "What???!! That's almost two hours
             of my life wasted on MATH!" We asked some friends to come along, and
             we ended up staying until we got booted out at the end of the event.
-            Total success.
+            <br>Total success.
           </p>
-          <div>
-            <p>Kendra Lockman</p>
-            <p>Parent</p>
+            <img class="testimonials__parentpic"src="./img/parent.svg" alt="">
+            <p class="testimonials__name">Kendra Lockman</p>
+            <p class="testimonials__role">Parent</p>
           </div>
         </div>
       </section>
-      <section>
-        <h2 class="heading">Frequently Asked Questions</h2>
-        <ul>
-          <li>
-            <p class="title">What is a math festival?</p>
+      <section class="faq">
+        <h2 class="faq__heading">Frequently Asked Questions</h2>
+        <ol class="faq__list">
+          <li class="faq__question">
+            <div class="faq__number one"></div>
+            <details>
+            <summary class="title">What is a math festival?
+              
+            </summary>
             <p>
               A math festival is a one-time event where children gather and
               explore math through puzzles. It’s the biggest math party
               around.Volunteers host our festivals. Anyone who wants to create
               joyful math for children is welcome to host one.
             </p>
+          </details>
+          <div class="spoilerarrow"></div>
           </li>
-          <li>
-            <p class="title">What is play-based math?</p>
+          <li class="faq__question">
+            <div class="faq__number two"></div>
+            <details>
+            <summary class="title">What is play-based math?</summary></details>
+            <div class="spoilerarrow"></div>
           </li>
-          <li>
-            <p class="title">Does Mathopolis have an age limit?</p>
+          <li class="faq__question">
+            <div class="faq__number three"></div>
+            <details>
+            <summary class="title">Does Mathopolis have an age limit?</summary></details>
+            <div class="spoilerarrow"></div>
           </li>
-          <li>
-            <p class="title">How much does Mathopolis cost?</p>
+          <li class="faq__question">
+            <div class="faq__number four"></div>
+            <details>
+            <summary class="title">How much does Mathopolis cost?</summary></details>
+            <div class="spoilerarrow"></div>
           </li>
-          <li>
-            <p class="title">
+          <li class="faq__question">
+            <div class="faq__number five"></div>
+            <details>
+            <summary class="title">
               What happened to the Julia Robinson Mathematics Festival?
-            </p>
+            </summary></details>
+            <div class="spoilerarrow"></div>
           </li>
-          <li>
-            <p class="title">
+          <li class="faq__question">
+            <div class="faq__number six"></div>
+            <details>
+            <summary class="title">
               Do I need to have a math background to do and share joyful math?
-            </p>
+            </summary></details>
+            <div class="spoilerarrow"></div>
           </li>
-        </ul>
+        </ol>
         <button class="btn1">See More Questions</button>
+        <img src="./img/mathopolis_city.svg" alt="">
       </section>
 
       <section class="news">
-        <h2 class="heading">What's new at Mathopolis?</h2>
+        <div>
+        <h2 class="news__heading">What's new at <br> Mathopolis?</h2>
         <a class="news__linkAllNews">See all news</a>
+      </div>
         <article class="news__card">
           <img class="news__pic" src="./img/newspic.png" alt="" />
           <div>
@@ -228,48 +254,57 @@
       </section>
 
       <section class="subscribe">
-        <h2 class="heading">Don't miss a thing</h2>
-        <p class="description">
+        <img class="subscribe__image1"src="./img/mathgirl.jpg" alt="">
+        <div class="subscribe__container">
+        <h2 class="subscribe__heading">Don't miss a thing</h2>
+        <p class="subscribe__description">
           Join us on social media and subscribe to our newsletter to stay
           updated with our events, puzzles, educational resources and more.
         </p>
-        <input class="subscribe__input" type="email" />
-        <button class="subscribe__button btn1">Subscribe</button>
+        <div class="subscribe__form">
+        <input class="subscribe__input" type="email" placeholder="Enter your e-mail" />
+        <button class="subscribe__button btn1">Subscribe</button></div></div><img class="subscribe__image2" src="./img/kidsgraphics.jpg" alt="">
       </section>
     </main>
-
-    </div>
     
     <footer class="footer">
-      <img src="./img/logo.png" alt="" />
-      <p>
-        We're a fiscally-sponsored project of a 501(c)3, Social and
+      <div class="footer__copyright">
+      <img class="footer__logo" src="./img/logo.png" alt="" />
+      <p class="footer__font">
+        We're a fiscally-sponsored <br> project of a 501(c)3, Social and<br>
         Environmental Entrepreneurs.
       </p>
-      <ul>
+      <p class="copyright">© 2007–2022 Mathopolis</p>
+    </div>
+    <div class="footer__links">
+      <ul class="footer__list">
         <li><a>Students</a></li>
         <li><a>Parents</a></li>
         <li><a>Teachers</a></li>
         <li><a>Volunteers</a></li>
         <li><a>Events</a></li>
       </ul>
-      <ul>
+    </div>
+    <div class="footer__links2">
+      <ul class="footer__list">
         <li><a>Puzzles</a></li>
         <li><a>About</a></li>
         <li><a>News</a></li>
         <li><a>Store</a></li>
         <li><a>Donate</a></li>
       </ul>
-      <p>Follow us</p>
-      <ul>
-        <li><div></div></li>
-        <li><div></div></li>
-        <li><div></div></li>
-        <li><div></div></li>
-        <li><div></div></li>
+    </div>
+    <div class="footer__follow">
+      <p class="footer__font">Follow us</p>
+      <ul class="footer__contact">
+        <li><div class="footer__icon twitter"></div></li>
+        <li><div class="footer__icon linkedin"></div></li>
+        <li><div class="footer__icon instagram"></div></li>
+        <li><div class="footer__icon facebook"></div></li>
+        <li><div class="footer__icon youtube"></div></li>
       </ul>
       <a class="btn1">Support our cause</a>
-      <p class="copyright">© 2007–2022 Mathopolis</p>
+    </div>
     </footer>
   </body>
 </html>
