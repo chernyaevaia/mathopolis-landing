@@ -16,7 +16,7 @@
 
   <body>
     <header class="header">
-      <img src="./img/logo.png" alt="" />
+      <img class="header__logo" src="./img/logo.png" alt="" />
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
@@ -45,12 +45,12 @@
           </li>
         </ul>
       </nav>
-      <a class="menu__link menu__donate" href="#">Donate</a>
+      <a class="menu__donateBtn" href="#">Donate</a>
     </header>
 
     <main>
       <div class="intro">
-        <div class="intro__logo"></div>
+        <img class="intro__logo" src="./img/mathforall.png" alt="" />
         <p class="intro__slogan">
           We are a nonprofit on a mission to create magical math moments
         </p>
@@ -80,7 +80,6 @@
           <h2 class="features__heading heading">Why Mathopolis Works</h2>
           <p class="features__subheading">
             Mathopolis hosts fun classroom and community math events, creates
-            <br />
             math puzzles, and trains educators how to inspire kids with joyful
             math.
           </p>
@@ -127,45 +126,44 @@
       </section>
 
       <section class="categories">
-        <div class="categories__wrapper">
-          <div>
-            <h2 class="categories__heading heading">
-              Discover Magical <br />
-              Maths Moments
-            </h2>
-            <div class="categories__card">
-              <div class="categories__icon1"></div>
-              <div>
-                <p class="categories__title title">Events</p>
-                <p class="categories__description">
-                  From the classroom to a community festival.
-                </p>
-              </div>
-              <div class="categories__arrow"></div>
+        <div>
+          <h2 class="categories__heading heading">
+            Discover Magical <br />
+            Maths Moments
+          </h2>
+
+          <div class="categories__card">
+            <div class="categories__icon1"></div>
+            <div>
+              <p class="categories__title title">Events</p>
+              <p class="categories__description description">
+                From the classroom to a community festival.
+              </p>
             </div>
-            <div class="categories__card">
-              <div class="categories__icon2"></div>
-              <div>
-                <p class="categories__title title">Puzzles</p>
-                <p class="categories__description">
-                  Math puzzles for all ages and skill levels.
-                </p>
-              </div>
-              <div class="categories__arrow"></div>
-            </div>
-            <div class="categories__card">
-              <div class="categories__icon3"></div>
-              <div>
-                <p class="categories__title title">Workshops</p>
-                <p class="categories__description">
-                  Learn how to spread joyful math.
-                </p>
-              </div>
-              <div class="categories__arrow"></div>
-            </div>
+            <div class="categories__arrow"></div>
           </div>
-          <img class="categories__image" src="./img/discover-img.png" alt="" />
+          <div class="categories__card">
+            <div class="categories__icon2"></div>
+            <div>
+              <p class="categories__title title">Puzzles</p>
+              <p class="categories__description description">
+                Math puzzles for all ages and skill levels.
+              </p>
+            </div>
+            <div class="categories__arrow"></div>
+          </div>
+          <div class="categories__card">
+            <div class="categories__icon3"></div>
+            <div>
+              <p class="categories__title title">Workshops</p>
+              <p class="categories__description description">
+                Learn how to spread joyful math.
+              </p>
+            </div>
+            <div class="categories__arrow"></div>
+          </div>
         </div>
+        <img class="categories__image" src="./img/discover-img.png" alt="" />
       </section>
 
       <section class="testimonials">
@@ -189,7 +187,7 @@
           <li class="faq__card">
             <div class="faq__number one"></div>
             <details>
-              <summary class="title">What is a math festival?</summary>
+              <summary class="faq__question">What is a math festival?</summary>
               <p>
                 A math festival is a one-time event where children gather and
                 explore math through puzzles. It’s the biggest math party
@@ -202,14 +200,14 @@
           <li class="faq__card">
             <div class="faq__number two"></div>
             <details>
-              <summary class="title">What is play-based math?</summary>
+              <summary class="faq__question">What is play-based math?</summary>
             </details>
             <div class="spoilerarrow"></div>
           </li>
           <li class="faq__card">
             <div class="faq__number three"></div>
             <details>
-              <summary class="title">
+              <summary class="faq__question">
                 Does Mathopolis have an age limit?
               </summary>
             </details>
@@ -218,14 +216,16 @@
           <li class="faq__card">
             <div class="faq__number four"></div>
             <details>
-              <summary class="title">How much does Mathopolis cost?</summary>
+              <summary class="faq__question">
+                How much does Mathopolis cost?
+              </summary>
             </details>
             <div class="spoilerarrow"></div>
           </li>
           <li class="faq__card">
             <div class="faq__number five"></div>
             <details>
-              <summary class="title">
+              <summary class="faq__question">
                 What happened to the Julia Robinson Mathematics Festival?
               </summary>
             </details>
@@ -234,7 +234,7 @@
           <li class="faq__card">
             <div class="faq__number six"></div>
             <details>
-              <summary class="title">
+              <summary class="faq__question">
                 Do I need to have a math background to do and share joyful math?
               </summary>
             </details>
@@ -242,11 +242,11 @@
           </li>
         </ol>
         <button class="btn1">See More Questions</button>
-        <img src="./img/mathopolis_city.svg" alt="" />
+        <img class="faq__cityimg" src="./img/mathopolis_city.svg" alt="" />
       </section>
 
       <section class="news">
-        <div>
+        <div class="news__wrapper">
           <h2 class="news__heading heading">
             What's new at <br />
             Mathopolis?
@@ -273,7 +273,7 @@
         <img class="subscribe__image1" src="./img/mathgirl.jpg" alt="" />
         <div class="subscribe__container">
           <h2 class="subscribe__heading heading">Don't miss a thing</h2>
-          <p class="subscribe__description">
+          <p class="subscribe__description description">
             Join us on social media and subscribe to our newsletter to stay
             updated with our events, puzzles, educational resources and more.
           </p>
@@ -300,26 +300,22 @@
         </p>
         <p class="copyright">© 2007–2022 Mathopolis</p>
       </div>
-      <div class="footer__links">
-        <ul class="footer__list">
-          <li><a>Students</a></li>
-          <li><a>Parents</a></li>
-          <li><a>Teachers</a></li>
-          <li><a>Volunteers</a></li>
-          <li><a>Events</a></li>
-        </ul>
-      </div>
-      <div class="footer__links2">
-        <ul class="footer__list">
-          <li><a>Puzzles</a></li>
-          <li><a>About</a></li>
-          <li><a>News</a></li>
-          <li><a>Store</a></li>
-          <li><a>Donate</a></li>
-        </ul>
-      </div>
+      <ul class="footer__list">
+        <li><a>Students</a></li>
+        <li><a>Parents</a></li>
+        <li><a>Teachers</a></li>
+        <li><a>Volunteers</a></li>
+        <li><a>Events</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li><a>Puzzles</a></li>
+        <li><a>About</a></li>
+        <li><a>News</a></li>
+        <li><a>Store</a></li>
+        <li><a>Donate</a></li>
+      </ul>
       <div class="footer__follow">
-        <p class="footer__font">Follow us</p>
+        <p>Follow us:</p>
         <ul class="footer__contact">
           <li><div class="footer__icon twitter"></div></li>
           <li><div class="footer__icon linkedin"></div></li>
