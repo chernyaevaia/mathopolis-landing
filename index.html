@@ -164,17 +164,46 @@
 
       <section class="testimonials">
         <h2 class="testimonials__heading heading">Testimonials</h2>
-        <p class="testimonials__review">
-          When I asked my 8 year old if he wanted to go to a math festival, I
-          got a rather tepid, "Um... maybe? How long is it?" When I told him 1
-          hour and 45 minutes, he was like, "What???!! That's almost two hours
-          of my life wasted on MATH!" We asked some friends to come along, and
-          we ended up staying until we got booted out at the end of the event.
-          <br />Total success.
-        </p>
-        <img class="testimonials__parentpic" src="./img/parent.svg" alt="" />
-        <p class="testimonials__name">Kendra Lockman</p>
-        <p class="testimonials__role">Parent</p>
+        <div class="carousel" data-carousel>
+          <div class="testimonials__arrowLeft carousel__button"></div>
+          <div class="carousel__track-container" data-slides>
+            <div class="carousel__slide" data-active>
+              <p class="testimonials__review">
+                When I asked my 8 year old if he wanted to go to a math
+                festival, I got a rather tepid, "Um... maybe? How long is it?"
+                When I told him 1 hour and 45 minutes, he was like, "What???!!
+                That's almost two hours of my life wasted on MATH!" We asked
+                some friends to come along, and we ended up staying until we got
+                booted out at the end of the event.
+                <br />Total success.
+              </p>
+              <img
+                class="testimonials__parentpic"
+                src="./img/parent.svg"
+                alt=""
+              />
+              <p class="testimonials__name">Kendra Lockman</p>
+              <p class="testimonials__role">Parent</p>
+            </div>
+
+            <div class="carousel__slide">
+              <p class="testimonials__review">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptate provident enim quidem pariatur ad cupiditate eius
+                assumenda obcaecati magni ex impedit possimus voluptas earum
+                exercitationem mollitia dolorem dolor, eum aut!
+              </p>
+              <img
+                class="testimonials__parentpic"
+                src="./img/parentpic2.png"
+                alt=""
+              />
+              <p class="testimonials__name">John Watkins</p>
+              <p class="testimonials__role">Parent</p>
+            </div>
+          </div>
+          <div class="testimonials__arrowRight carousel__button"></div>
+        </div>
       </section>
 
       <section class="faq">
@@ -184,7 +213,7 @@
             <div class="faq__number one"></div>
             <details>
               <summary class="faq__question">What is a math festival?</summary>
-              <p>
+              <p class="faq__answer">
                 A math festival is a one-time event where children gather and
                 explore math through puzzles. It’s the biggest math party
                 around.Volunteers host our festivals. Anyone who wants to create
@@ -197,6 +226,12 @@
             <div class="faq__number two"></div>
             <details>
               <summary class="faq__question">What is play-based math?</summary>
+              <p class="faq__answer">
+                A math festival is a one-time event where children gather and
+                explore math through puzzles. It’s the biggest math party
+                around.Volunteers host our festivals. Anyone who wants to create
+                joyful math for children is welcome to host one.
+              </p>
             </details>
             <div class="spoilerarrow"></div>
           </li>
@@ -206,6 +241,12 @@
               <summary class="faq__question">
                 Does Mathopolis have an age limit?
               </summary>
+              <p class="faq__answer">
+                A math festival is a one-time event where children gather and
+                explore math through puzzles. It’s the biggest math party
+                around.Volunteers host our festivals. Anyone who wants to create
+                joyful math for children is welcome to host one.
+              </p>
             </details>
             <div class="spoilerarrow"></div>
           </li>
@@ -215,6 +256,12 @@
               <summary class="faq__question">
                 How much does Mathopolis cost?
               </summary>
+              <p class="faq__answer">
+                A math festival is a one-time event where children gather and
+                explore math through puzzles. It’s the biggest math party
+                around.Volunteers host our festivals. Anyone who wants to create
+                joyful math for children is welcome to host one.
+              </p>
             </details>
             <div class="spoilerarrow"></div>
           </li>
@@ -224,6 +271,12 @@
               <summary class="faq__question">
                 What happened to the Julia Robinson Mathematics Festival?
               </summary>
+              <p class="faq__answer">
+                A math festival is a one-time event where children gather and
+                explore math through puzzles. It’s the biggest math party
+                around.Volunteers host our festivals. Anyone who wants to create
+                joyful math for children is welcome to host one.
+              </p>
             </details>
             <div class="spoilerarrow"></div>
           </li>
@@ -233,6 +286,12 @@
               <summary class="faq__question">
                 Do I need to have a math background to do and share joyful math?
               </summary>
+              <p class="faq__answer">
+                A math festival is a one-time event where children gather and
+                explore math through puzzles. It’s the biggest math party
+                around.Volunteers host our festivals. Anyone who wants to create
+                joyful math for children is welcome to host one.
+              </p>
             </details>
             <div class="spoilerarrow"></div>
           </li>
@@ -313,14 +372,25 @@
       <div class="footer__follow">
         <p>Follow us:</p>
         <ul class="footer__contact">
-          <li><div class="footer__icon twitter"></div></li>
-          <li><div class="footer__icon linkedin"></div></li>
-          <li><div class="footer__icon instagram"></div></li>
-          <li><div class="footer__icon facebook"></div></li>
-          <li><div class="footer__icon youtube"></div></li>
+          <li>
+            <div class="footer__icon twitter"></div>
+          </li>
+          <li>
+            <div class="footer__icon linkedin"></div>
+          </li>
+          <li>
+            <div class="footer__icon instagram"></div>
+          </li>
+          <li>
+            <div class="footer__icon facebook"></div>
+          </li>
+          <li>
+            <div class="footer__icon youtube"></div>
+          </li>
         </ul>
         <a class="button">Support our cause</a>
       </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>

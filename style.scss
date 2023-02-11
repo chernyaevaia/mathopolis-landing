@@ -162,6 +162,7 @@ a {
 ///////////////
 /// FEATURES//
 /// //////////
+
 .features {
   background-color: $blue1;
   @include flex-align-center;
@@ -307,6 +308,28 @@ a {
   background-color: $pink;
 }
 
+.carousel {
+  display: flex;
+}
+
+.carousel__slide {
+  display: none;
+}
+
+.carousel__slide[data-active] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel__button {
+  margin-top: 50px;
+  z-index: 3;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .testimonials__review {
   font-size: 24px;
   max-width: 980px;
@@ -318,6 +341,7 @@ a {
 
 .testimonials__parentpic {
   margin-bottom: 10px;
+  width: 100px;
 }
 
 .testimonials__name {
@@ -328,6 +352,22 @@ a {
   margin-top: 5px;
   font-size: 20px;
   opacity: 0.7;
+}
+
+.testimonials__arrowLeft {
+  width: 50px;
+  height: 50px;
+  margin-right: 60px;
+  background-image: url(./img/arrow-left1.svg);
+  background-repeat: no-repeat;
+}
+
+.testimonials__arrowRight {
+  margin-left: 60px;
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/arrow-right1.svg);
+  background-repeat: no-repeat;
 }
 
 ///////////////
@@ -412,11 +452,19 @@ details {
 }
 
 .faq__question {
+  max-width: 350px;
   font-size: 24px;
+  &:hover {
+    color: $darkpurple;
+  }
+}
+
+.faq__answer {
+  margin-top: 16px;
 }
 
 details[open] {
-  width: 600px;
+  width: 350px;
 }
 
 //////////////
@@ -753,6 +801,10 @@ details[open] {
     padding-top: 30px;
   }
 
+  .faq__list {
+    margin-bottom: 20px;
+  }
+
   .faq__card {
     min-width: 345px;
     margin-left: 20px;
@@ -760,6 +812,15 @@ details[open] {
 
   .faq__heading {
     margin-bottom: 50px;
+  }
+
+  .faq__question {
+    font-size: 20px;
+    max-width: 200px;
+  }
+
+  details[open] {
+    max-width: 200px;
   }
 
   .news {
