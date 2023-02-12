@@ -59,7 +59,7 @@ a {
   margin-bottom: 80px;
 }
 
-////////////
+//////////
 ///HEADER//
 ///////////
 
@@ -71,6 +71,10 @@ a {
 
 .header__logo {
   margin-right: 50px;
+}
+
+.header__burgerMenu {
+  display: none;
 }
 
 .menu__list {
@@ -317,9 +321,8 @@ a {
 }
 
 .carousel__slide[data-active] {
-  display: flex;
+  @include flex-align-center;
   flex-direction: column;
-  align-items: center;
 }
 
 .carousel__button {
@@ -713,12 +716,66 @@ details[open] {
     line-height: 21px;
   }
 
+  .header {
+    //background-color:#ff6d8d;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__wrapper-mobile {
+    @include flex-align-center;
+    justify-content: space-between;
+  }
+
+  .header__burgerMenu {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/img/burger-menu-ico.svg);
+    background-repeat: no-repeat;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .header__logo {
+    margin-right: 70px;
+  }
+
   .menu {
     display: none;
   }
 
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__link {
+    margin: 0;
+  }
+
+  .menu__item {
+    margin-bottom: 20px;
+  }
+
+  .menu__item > select {
+    width: 100%;
+  }
+
   .menu__donateBtn {
     display: none;
+    text-align: center;
+  }
+
+  .menu__donateBtn.active {
+    display: block;
+    margin: 20px 0 0 0;
   }
 
   .intro__slogan {
@@ -833,9 +890,7 @@ details[open] {
   }
 
   .news__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-justify-center;
     width: 345px;
     margin-bottom: 30px;
   }
@@ -892,8 +947,7 @@ details[open] {
   }
 
   .footer {
-    display: flex;
-    align-items: center;
+    @include flex-align-center;
     justify-content: center;
   }
 

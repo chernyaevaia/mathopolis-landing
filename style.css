@@ -46,6 +46,10 @@ a {
   margin-right: 50px;
 }
 
+.header__burgerMenu {
+  display: none;
+}
+
 .menu__list {
   display: flex;
   flex-wrap: wrap;
@@ -283,8 +287,8 @@ a {
 
 .carousel__slide[data-active] {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .carousel__button {
@@ -663,11 +667,55 @@ details[open] {
     font-size: 14px;
     line-height: 21px;
   }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__wrapper-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__burgerMenu {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url(/img/burger-menu-ico.svg);
+    background-repeat: no-repeat;
+  }
+  .header__burgerMenu:hover {
+    cursor: pointer;
+  }
+  .header__logo {
+    margin-right: 70px;
+  }
   .menu {
     display: none;
   }
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__link {
+    margin: 0;
+  }
+  .menu__item {
+    margin-bottom: 20px;
+  }
+  .menu__item > select {
+    width: 100%;
+  }
   .menu__donateBtn {
     display: none;
+    text-align: center;
+  }
+  .menu__donateBtn.active {
+    display: block;
+    margin: 20px 0 0 0;
   }
   .intro__slogan {
     font-size: 16px;
@@ -724,8 +772,8 @@ details[open] {
     margin-right: 15px;
   }
   .categories__icon1,
-.categories__icon2,
-.categories__icon3 {
+  .categories__icon2,
+  .categories__icon3 {
     display: none;
   }
   .categories__image {
@@ -760,7 +808,6 @@ details[open] {
   }
   .news__card {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 345px;
     margin-bottom: 30px;
@@ -789,7 +836,7 @@ details[open] {
     margin: 50px 30px 40px 30px;
   }
   .testimonials__name,
-.testimonials__role {
+  .testimonials__role {
     font-size: 14px;
   }
   .subscribe__input {
@@ -804,7 +851,6 @@ details[open] {
     margin: 20px 20px;
   }
   .subscribe__form {
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
   }
