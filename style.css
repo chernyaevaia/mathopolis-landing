@@ -90,7 +90,7 @@ a {
 }
 .menu__donateBtn:hover {
   cursor: pointer;
-  background-color: rgb(255, 115, 0);
+  background-color: #ff7300;
 }
 
 .intro {
@@ -135,11 +135,11 @@ a {
 }
 
 .features {
-  background-color: #2580c1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url(./img/background1.svg);
 }
 
 .features__heading {
@@ -212,7 +212,8 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   padding: 80px 0px;
-  background-color: #5fc8d7;
+  background-image: url(./img/background2.svg);
+  background-color: #2580c1;
 }
 
 .categories__card {
@@ -274,7 +275,8 @@ a {
   align-items: center;
   flex-direction: column;
   padding: 100px 0;
-  background-color: #ff6d8d;
+  background-image: url(./img/background3.svg);
+  background-color: #5fc8d7;
 }
 
 .carousel {
@@ -440,7 +442,8 @@ details[open] {
   justify-content: center;
   flex-wrap: wrap;
   padding: 120px 0;
-  background-color: #2580c1;
+  background-image: url(./img/background4.svg);
+  background-color: rgba(90, 200, 215, 0.2);
 }
 
 .news__wrapper {
@@ -525,7 +528,7 @@ details[open] {
 }
 .button:hover {
   cursor: pointer;
-  background-color: rgb(80, 2, 206);
+  background-color: #5002ce;
 }
 
 .subscribe {
@@ -741,6 +744,9 @@ details[open] {
     text-align: center;
     font-size: 14px;
   }
+  .features {
+    padding-top: 50px;
+  }
   .features__subheading {
     font-size: 16px;
     line-height: 21px;
@@ -809,6 +815,7 @@ details[open] {
   .news__card {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 345px;
     margin-bottom: 30px;
   }
@@ -827,7 +834,7 @@ details[open] {
     margin-bottom: 20px;
   }
   .testimonials {
-    padding: 10px 0 30px 0;
+    padding: 40px 0 30px 0;
   }
   .testimonials__review {
     font-size: 16px;
@@ -838,6 +845,10 @@ details[open] {
   .testimonials__name,
   .testimonials__role {
     font-size: 14px;
+  }
+  .testimonials__arrowLeft,
+  .testimonials__arrowRight {
+    display: none;
   }
   .subscribe__input {
     width: 345px;

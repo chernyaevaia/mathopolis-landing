@@ -11,9 +11,9 @@ $gray: #2a2a2a;
 $gray2: #777777;
 $purple: #6a19f5;
 $darkpurple: #4c11b2;
-$darkpurple2: rgb(80, 2, 206);
+$darkpurple2: #5002ce;
 $orange1: #f9523b;
-$orange2: rgb(255, 115, 0);
+$orange2: #ff7300;
 $blue1: #2580c1;
 $blue2: #5fc8d7;
 $pink: #ff6d8d;
@@ -168,10 +168,10 @@ a {
 /// //////////
 
 .features {
-  background-color: $blue1;
   @include flex-align-center;
   justify-content: center;
   flex-direction: column;
+  background-image: url(./img/background1.svg);
 }
 
 .features__heading {
@@ -245,7 +245,8 @@ a {
   @include flex-justify-center;
   flex-wrap: wrap;
   padding: 80px 0px;
-  background-color: $blue2;
+  background-image: url(./img/background2.svg);
+  background-color: $blue1;
 }
 
 .categories__card {
@@ -309,7 +310,8 @@ a {
   @include flex-align-center;
   flex-direction: column;
   padding: 100px 0;
-  background-color: $pink;
+  background-image: url(./img/background3.svg);
+  background-color: $blue2;
 }
 
 .carousel {
@@ -478,7 +480,8 @@ details[open] {
   @include flex-justify-center;
   flex-wrap: wrap;
   padding: 120px 0;
-  background-color: $blue1;
+  background-image: url(./img/background4.svg);
+  background-color: rgba(90, 200, 215, 0.2);
 }
 
 .news__wrapper {
@@ -717,7 +720,6 @@ details[open] {
   }
 
   .header {
-    //background-color:#ff6d8d;
     display: flex;
     flex-direction: column;
   }
@@ -806,6 +808,10 @@ details[open] {
     font-size: 14px;
   }
 
+  .features {
+    padding-top: 50px;
+  }
+
   .features__subheading {
     font-size: 16px;
     line-height: 21px;
@@ -891,6 +897,7 @@ details[open] {
 
   .news__card {
     @include flex-justify-center;
+    flex-direction: column;
     width: 345px;
     margin-bottom: 30px;
   }
@@ -913,7 +920,7 @@ details[open] {
   }
 
   .testimonials {
-    padding: 10px 0 30px 0;
+    padding: 40px 0 30px 0;
   }
 
   .testimonials__review {
@@ -926,6 +933,11 @@ details[open] {
   .testimonials__name,
   .testimonials__role {
     font-size: 14px;
+  }
+
+  .testimonials__arrowLeft,
+  .testimonials__arrowRight {
+    display: none;
   }
 
   .subscribe__input {
