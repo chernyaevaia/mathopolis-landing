@@ -293,7 +293,7 @@ a {
 .categories__arrow {
   width: 30px;
   height: 60px;
-  padding-right: 30px;
+  padding-right: 60px;
   background-image: url(./img/arrow-right.svg);
   background-repeat: no-repeat;
 }
@@ -616,10 +616,8 @@ details[open] {
   flex-wrap: wrap;
   padding: 50px 30px;
   background-color: #fff2d6;
-}
-
-.footer__container {
-  margin-right: 150px;
+  -moz-column-gap: 140px;
+       column-gap: 140px;
 }
 
 .footer__logo {
@@ -640,14 +638,16 @@ details[open] {
   margin: 22px 0 60px 0;
 }
 
-.footer__list {
-  margin: 6px 120px 0 0;
+.footer__listContainer {
+  display: flex;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 
 .footer__list > li {
+  margin-bottom: 30px;
   font-size: 20px;
   text-transform: uppercase;
-  margin: 30px 0;
 }
 .footer__list > li:hover {
   cursor: pointer;
@@ -824,6 +824,11 @@ details[open] {
     display: none;
   }
 }
+@media (max-width: 776px) {
+  .footer__container {
+    order: 3;
+  }
+}
 @media (max-width: 480px) {
   .title {
     font-size: 28px;
@@ -877,6 +882,8 @@ details[open] {
     align-items: center;
     height: 100px;
     margin: 8px 16px;
+    width: 345px;
+    max-width: none;
   }
   .roles__title {
     text-align: center;
@@ -961,6 +968,15 @@ details[open] {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .footer__follow {
+    margin-top: 0;
+  }
+  .footer__listContainer {
+    order: 2;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin-top: 40px;
   }
   .footer__list {
     margin: 0 25px;
