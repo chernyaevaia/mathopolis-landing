@@ -19,9 +19,22 @@ buttons.forEach((button) => {
 });
 
 let menuBtn = document.querySelector(".header__burgerMenu");
+let closeBtn = document.querySelector(".header__closeBurgerMenu");
 let menu = document.querySelector(".menu");
-let donateBtn = document.querySelector(".menu__donateBtn");
-menuBtn.addEventListener("click", function () {
+let donateBtn = document.querySelector(".header__donateBtn");
+let sideContainer = document.querySelector(".header__sideContainer");
+
+function toggleStyles() {
   menu.classList.toggle("active");
+  closeBtn.classList.toggle("active");
   donateBtn.classList.toggle("active");
+  sideContainer.classList.toggle("active");
+}
+
+menuBtn.addEventListener("click", function () {
+  toggleStyles();
+});
+
+closeBtn.addEventListener("click", function () {
+  toggleStyles();
 });

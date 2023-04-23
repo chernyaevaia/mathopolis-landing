@@ -14,46 +14,68 @@
     />
   </head>
 
-  <body>
+  <body class="main">
     <header class="header">
-      <div class="header__wrapper-mobile">
-        <img class="header__logo" src="./img/logo.png" alt="" />
-        <div class="header__burgerMenu"></div>
-      </div>
+      <img
+        class="header__logo"
+        src="./img/logo.png"
+        alt="Mathopolis website home page"
+      />
       <nav class="menu">
+        <div class="header__closeBurgerMenu"></div>
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#">Puzzles</a>
           </li>
           <li class="menu__item">
-            <select class="menu__dropdown">
-              <option><a class="menu__link" href="#">Get Involved</a></option>
-              <option><a class="menu__link" href="#">Get Involved</a></option>
-            </select>
+            <div class="menu__dropdown">
+              <a href="#" class="menu__link dropdown__link">Get Involved</a>
+              <div class="dropdown__content">
+                <a href="#">Get Involved 1</a>
+                <a href="#">Get Involved 2</a>
+                <a href="#">Get Involved 3</a>
+              </div>
+            </div>
           </li>
           <li class="menu__item">
-            <select class="menu__dropdown">
-              <option><a class="menu__link" href="#">Events</a></option>
-              <option><a class="menu__link" href="#">Events</a></option>
-            </select>
+            <div class="menu__dropdown">
+              <a href="#" class="menu__link dropdown__link">Events</a>
+              <div class="dropdown__content">
+                <a href="#">Event 1</a>
+                <a href="#">Event 2</a>
+                <a href="#">Event 3</a>
+                <a href="#">Event 4</a>
+                <a href="#">Event 5</a>
+              </div>
+            </div>
           </li>
           <li class="menu__item">
-            <select class="menu__dropdown">
-              <option><a class="menu__link" href="#">About</a></option>
-              <option><a class="menu__link" href="#">About</a></option>
-            </select>
+            <div class="menu__dropdown">
+              <a href="#" class="menu__link dropdown__link">About</a>
+              <div class="dropdown__content">
+                <a href="#">About us</a>
+                <a href="#">About teachers</a>
+                <a href="#">About students</a>
+              </div>
+            </div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Store</a>
           </li>
         </ul>
       </nav>
-      <a class="menu__donateBtn" href="#">Donate</a>
+      <div class="header__sideContainer">
+        <a class="header__donateBtn" href="#">Donate</a>
+        <div class="header__burgerMenu"></div>
+      </div>
     </header>
-
     <main>
       <div class="intro">
-        <img class="intro__logo" src="./img/mathforall.png" alt="" />
+        <img
+          class="intro__logo"
+          src="./img/mathforall.png"
+          alt="Mathopolis Logo"
+        />
         <p class="intro__slogan">
           We are a nonprofit on a mission to create magical math moments
         </p>
@@ -183,7 +205,7 @@
               <img
                 class="testimonials__parentpic"
                 src="./img/parent.svg"
-                alt=""
+                alt="parent photo"
               />
               <p class="testimonials__name">Kendra Lockman</p>
               <p class="testimonials__role">Parent</p>
@@ -199,7 +221,7 @@
               <img
                 class="testimonials__parentpic"
                 src="./img/parentpic2.png"
-                alt=""
+                alt="parent photo"
               />
               <p class="testimonials__name">John Watkins</p>
               <p class="testimonials__role">Parent</p>
@@ -328,7 +350,11 @@
       </section>
 
       <section class="subscribe">
-        <img class="subscribe__image1" src="./img/mathgirl.jpg" alt="" />
+        <img
+          class="subscribe__image1"
+          src="./img/mathgirl.jpg"
+          alt="girl in class"
+        />
         <div class="subscribe__container">
           <h2 class="subscribe__heading heading">Don't miss a thing</h2>
           <p class="subscribe__description description">
@@ -350,7 +376,7 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <img class="footer__logo" src="./img/logo.png" alt="" />
+        <img class="footer__logo" src="./img/logo.png" alt="mathopolis logo" />
         <p class="footer__font">
           We're a fiscally-sponsored <br />
           project of a 501(c)3, Social and<br />
